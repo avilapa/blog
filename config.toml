@@ -1,37 +1,56 @@
-BaseUrl= "http://avilapa.github.io/"
-LanguageCode= "es-ES"
-Title= "Víctor Àvila Parcet"
+title = "Víctor Ávila"
+baseURL = "https://avilapa.github.io/"
+languageCode = "en-us"
+theme = "casper"
+
 paginate = 5
 DisqusShortname = "avilapa"
 Copyright = "All rights reserved - 2018"
 canonifyurls = true
 
+[[menu.main]]
+name = "Projects"
+pre = "<h3>avilapa</h3>"
+url = "https://github.com/avilapa"
+weight = 220
+
+[[menu.main]]
+identifier = "blog"
+name = "Blog"
+url = "/"
+weight = 110
+
+[[menu.main]]
+name = "Twitter"
+url = "https://twitter.com/97torvic"
+weight = 100
+
 [params]
-  description = "Videogames programmer and enthusiast studying at ESAT Valencia."
+  description = "Videogames programming student and enthusiast"
   metadescription = "Used as 'description' meta tag for both home and index pages. If not set, 'description' will be used instead"
-  cover = "images/cover.jpg"
-  author = "Víctor Àvila Parcet"
+  cover = "images/cover.png"
+  author = "Víctor Ávila Parcet"
   authorlocation = "Valencia, Spain"
   authorwebsite = "http://avilapa.github.io"
-  authorbio= "I am a videogames programming student currently at my third year in ESAT."
-  logo = "images/logo.png"
+  authorbio= "Videogames programming student and enthusiast"
+  logo = "images/logo-small.png"
   googleAnalyticsUserID = "UA-79101-12"
   # Optional RSS-Link, if not provided it defaults to the standard index.xml
-  RSSLink = "http://feeds.feedburner.com/..."
+  # RSSLink = ""
   githubName = "avilapa"
   twitterName = "97torvic"
   # facebookName = ""
   # codepenName = ""
-  # linkedinName = "97torvic"
+  linkedinName = "97torvic"
   # stackoverflowId = ""
   # keybaseName = ""
   # flickrName = ""
   # instagramName = ""
-  # email = "victorap97@gmail.com"
+  email = "victorap97@gmail.com"
   # pinterestName = ""
-  # googlePlusName = "97torvic"
+  googlePlusName = "97torvic"
   # set true if you are not proud of using Hugo (true will hide the footer note "Proudly published with HUGO.....")
-  hideHUGOSupport = false
+  hideHUGOSupport = true
   
   # Setting a value will load highlight.js and enable syntax highlighting using the style selected.
   # See https://github.com/isagalaev/highlight.js/tree/master/src/styles for available styles
