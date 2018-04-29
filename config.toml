@@ -1,3 +1,42 @@
-baseURL = "http://example.org/"
-languageCode = "en-us"
-title = "My New Hugo Site"
+BaseUrl= "http://avilapa.github.io/"
+LanguageCode= "es-ES"
+Title= "Víctor Àvila Parcet"
+paginate = 5
+DisqusShortname = "avilapa"
+Copyright = "All rights reserved - 2018"
+canonifyurls = true
+
+[params]
+  description = "Videogames programmer and enthusiast studying at ESAT Valencia."
+  metadescription = "Used as 'description' meta tag for both home and index pages. If not set, 'description' will be used instead"
+  cover = "images/cover.jpg"
+  author = "Víctor Àvila Parcet"
+  authorlocation = "Valencia, Spain"
+  authorwebsite = "http://avilapa.github.io"
+  authorbio= "I am a videogames programming student currently at my third year in ESAT."
+  logo = "images/logo.png"
+  googleAnalyticsUserID = "UA-79101-12"
+  # Optional RSS-Link, if not provided it defaults to the standard index.xml
+  RSSLink = "http://feeds.feedburner.com/..."
+  githubName = "avilapa"
+  twitterName = "97torvic"
+  # facebookName = ""
+  # codepenName = ""
+  # linkedinName = "97torvic"
+  # stackoverflowId = ""
+  # keybaseName = ""
+  # flickrName = ""
+  # instagramName = ""
+  # email = "victorap97@gmail.com"
+  # pinterestName = ""
+  # googlePlusName = "97torvic"
+  # set true if you are not proud of using Hugo (true will hide the footer note "Proudly published with HUGO.....")
+  hideHUGOSupport = false
+  
+  # Setting a value will load highlight.js and enable syntax highlighting using the style selected.
+  # See https://github.com/isagalaev/highlight.js/tree/master/src/styles for available styles
+  # A preview of above styles can be viewed at https://highlightjs.org/static/demo/
+  hjsStyle = "default"
+
+  [params.social]
+    twitter = "97torvic"
