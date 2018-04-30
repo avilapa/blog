@@ -5,6 +5,7 @@ image = "/content/images/2018/apr/upydk.png"
 slug = "example1"
 tags = ["event", "example", "blog"]
 title = "Example 1"
+description = "First example of blog post."
 
 +++
 

@@ -9,32 +9,29 @@ Copyright = "All rights reserved - 2018"
 canonifyurls = true
 
 [[menu.main]]
-identifier = "about"
-name = "About me"
+identifier = "blog"
+name = "Blog"
 pre = "<h3>avilapa</h3>"
-url = "/about"
+url = "/"
 weight = 230
 
 [[menu.main]]
-name = "Projects"
-url = "https://github.com/avilapa"
-weight = 220
+identifier = "fuel-renegades"
+name = "Fuel Renegades"
+pre = "<h3>Projects</h3>"
+url = "/fuel-renegades"
+weight = 210
 
 [[menu.main]]
-identifier = "blog"
-name = "Blog"
-url = "/"
-weight = 110
-
-[[menu.main]]
-name = "Twitter"
-url = "https://twitter.com/97torvic"
-weight = 100
+identifier = "upydk"
+name = "UPyDK"
+url = "/upydk"
+weight = 200
 
 [params]
   description = "Videogames programming student and enthusiast"
   metadescription = "Used as 'description' meta tag for both home and index pages. If not set, 'description' will be used instead"
-  cover = "images/cover_u.png"
+  cover = "images/cover-upydk.png"
   author = "Víctor Ávila Parcet"
   authorlocation = "Valencia, Spain"
   authorwebsite = "http://avilapa.github.io"
@@ -44,17 +41,17 @@ weight = 100
   # Optional RSS-Link, if not provided it defaults to the standard index.xml
   # RSSLink = ""
   githubName = "avilapa"
-  twitterName = "97torvic"
+  twitterName = "ModularSouls"
   # facebookName = ""
   # codepenName = ""
-  linkedinName = "97torvic"
+  linkedinName = "avilapa"
   # stackoverflowId = ""
   # keybaseName = ""
   # flickrName = ""
   # instagramName = ""
-  email = "victorap97@gmail.com"
+  # email = ""
   # pinterestName = ""
-  googlePlusName = "97torvic"
+  # googlePlusName = ""
   # set true if you are not proud of using Hugo (true will hide the footer note "Proudly published with HUGO.....")
   hideHUGOSupport = true
   
