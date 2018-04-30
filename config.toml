@@ -9,8 +9,14 @@ Copyright = "All rights reserved - 2018"
 canonifyurls = true
 
 [[menu.main]]
-name = "Projects"
+identifier = "about"
+name = "About me"
 pre = "<h3>avilapa</h3>"
+url = "/about"
+weight = 230
+
+[[menu.main]]
+name = "Projects"
 url = "https://github.com/avilapa"
 weight = 220
 
@@ -28,7 +34,7 @@ weight = 100
 [params]
   description = "Videogames programming student and enthusiast"
   metadescription = "Used as 'description' meta tag for both home and index pages. If not set, 'description' will be used instead"
-  cover = "images/cover.png"
+  cover = "images/cover_u.png"
   author = "Víctor Ávila Parcet"
   authorlocation = "Valencia, Spain"
   authorwebsite = "http://avilapa.github.io"
