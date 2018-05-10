@@ -30,14 +30,14 @@ weight = 200
 
 [params]
   description = "Videogames programming student and enthusiast"
-  metadescription = "Used as 'description' meta tag for both home and index pages. If not set, 'description' will be used instead"
+  metadescription = ""
   cover = "images/cover-upydk.png"
   author = "Víctor Ávila Parcet"
   authorlocation = "Valencia, Spain"
   authorwebsite = "http://avilapa.github.io"
   authorbio= "Videogames programming student and enthusiast"
   logo = "images/logo-small.png"
-  googleAnalyticsUserID = "UA-79101-12"
+  googleAnalyticsUserID = "UA-118883750-1"
   # Optional RSS-Link, if not provided it defaults to the standard index.xml
   # RSSLink = ""
   githubName = "avilapa"
@@ -52,13 +52,13 @@ weight = 200
   # email = ""
   # pinterestName = ""
   # googlePlusName = ""
-  # set true if you are not proud of using Hugo (true will hide the footer note "Proudly published with HUGO.....")
+
   hideHUGOSupport = true
   
   # Setting a value will load highlight.js and enable syntax highlighting using the style selected.
   # See https://github.com/isagalaev/highlight.js/tree/master/src/styles for available styles
   # A preview of above styles can be viewed at https://highlightjs.org/static/demo/
-  hjsStyle = "default"
+  hjsStyle = "vs"
 
   [params.social]
     twitter = "97torvic"
