@@ -13,7 +13,7 @@ type = "page"
 
 ![Fuel Renegades Logo](/images/fuelrenegades.jpg)
 
-# Blog posts
+### Blog posts
 ---
 
 
@@ -21,5 +21,7 @@ type = "page"
 >How to achieve physics framerate independence in UE4 and how to correctly use substepping.
 >	<br><small><b>Víctor Ávila</b></small>
 
-[1]: /post/framerate-independent-physics-in-ue4/
+[1]: /post/coming-soon/
+[//]: # ([1]: /post/framerate-independent-physics-in-ue4/)
 \
+

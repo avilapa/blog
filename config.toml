@@ -23,20 +23,20 @@ url = "/fuel-renegades"
 weight = 210
 
 [[menu.main]]
-identifier = "upydk"
-name = "UPyDK"
-url = "/upydk"
+identifier = "render-engine"
+name = "Custom Engine"
+url = "/render-engine"
 weight = 200
 
 [params]
   description = "Videogames programming student and enthusiast"
   metadescription = ""
-  cover = "images/cover-upydk.png"
+  cover = "images/cover-engine-dark.png"
   author = "Víctor Ávila Parcet"
   authorlocation = "Valencia, Spain"
   authorwebsite = "http://avilapa.github.io"
   authorbio= "Videogames programming student and enthusiast"
-  logo = "images/logo-small.png"
+  logo = "images/logo-large.png"
   googleAnalyticsUserID = "UA-118883750-1"
   # Optional RSS-Link, if not provided it defaults to the standard index.xml
   # RSSLink = ""
