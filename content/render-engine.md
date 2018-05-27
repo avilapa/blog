@@ -51,6 +51,5 @@ This is an __OpenGL__ and __C++__ rendering engine I made in my final HND year a
 >My custom engine's postprocessing.
 >	<br><small><b>Víctor Ávila</b></small>
 
-[2]: /post/coming-soon/
-[//]: # ([2]: /post/custom-engine-postprocessing/)
+[2]: /post/custom-engine-postprocessing/
 \
