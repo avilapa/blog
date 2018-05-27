@@ -1,8 +1,7 @@
 +++
-
+comments = false
 date = "2006-08-30T03:45:00+02:00"
 draft = false
-
 image = "images/cover-render-engine.png"
 layout = "cover"
 title = "Custom OpenGL C++ Engine"
@@ -15,7 +14,7 @@ type = "page"
 
 ### The Engine
 
-This is an __OpenGL__ and __C++__ rendering engine I made in my final HND year at ESAT Valencia for the graphics programming subject. Its main features are the following:
+This is an __OpenGL__ and __C++__ rendering engine I made in my final HND year at [ESAT Valencia](https://www.esat.es/) for the graphics programming subject. Its main features are the following:
 
 - Multithreaded agnostical graphics API
 - Component oriented engine
@@ -45,8 +44,7 @@ This is an __OpenGL__ and __C++__ rendering engine I made in my final HND year a
 >The physically based approach used for my custom rendering engine.
 >	<br><small><b>Víctor Ávila</b></small>
 
-[1]: /post/coming-soon/
-[//]: # ([1]: /post/custom-engine-pbr/)
+[1]: /post/custom-engine-pbr/
 \
 
 >### [Custom Engine: Postprocessing][2]
