@@ -26,7 +26,7 @@ description = "The physically based approach used for my custom rendering engine
 ## Background
 
 <p align="justify">
-<b>Physically Based Rendering</b> is not a technique, but a collection of graphics techniques aiming to achieve results as close as possible to the <b>physical world</b>. This means that these techniques are highly based on real world physics light behaviour formulas. However, in order for this techiniques to be plausible to be rendered in real-time, some approximations need to be made (that is where the "based" in PBR comes from!).
+<b>Physically Based Rendering</b> is not a technique, but a collection of graphics techniques aiming to achieve results as close as possible to the <b>physical world</b>. This means that these techniques are highly based on real world physics light behaviour formulas. However, in order for these techiniques to be plausible to be rendered in real-time, some approximations need to be made (that is where the "based" in PBR comes from!).
 </p>
 
 <p align="justify">
