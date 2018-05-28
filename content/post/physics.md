@@ -1,7 +1,6 @@
 +++
 date = "2014-07-11T10:54:24+02:00"
 draft = true
-
 comments = false
 image = "/content/images/2018/may/xativa.png"
 slug = "framerate-independent-physics-in-ue4"
@@ -158,4 +157,4 @@ In such a case the user will expect the object to move speed * delta time. Howev
 Getting the rest of the engine to use this new delta time would affect many systems, and so we ultimately decided to go with semi fixed. 
 \
 
-##### Special Thanks
+##### References

@@ -38,7 +38,7 @@ In this post I will talk about the PBR techniques I implemented in my <a href="/
 #### Introduction
 
 <p align="justify">
-My implementation is highly based on <a href="https://learnopengl.com/PBR/Lighting">this tutorial</a>. Its basis are the following:
+My implementation is highly based on <a href="https://learnopengl.com/PBR/Lighting" target="_blank">this tutorial</a>. Its basis are the following:
 </p>
 
 
@@ -57,7 +57,7 @@ My implementation is highly based on <a href="https://learnopengl.com/PBR/Lighti
 
 <img src="/content/images/2018/may/engine-pbr/brdf.png" />
 
-In the end, we get the Cook-Torrance <b>reflectance equation</b>, a more specialized version of the <a href="https://en.wikipedia.org/wiki/Rendering_equation">rendering equation</a>. 
+In the end, we get the Cook-Torrance <b>reflectance equation</b>, a more specialized version of the <a href="https://en.wikipedia.org/wiki/Rendering_equation" target="_blank">rendering equation</a>. 
 
 <img src="/content/images/2018/may/engine-pbr/reflectance.png"/>
 </p>
@@ -65,7 +65,7 @@ In the end, we get the Cook-Torrance <b>reflectance equation</b>, a more special
 #### Physically Based Shading
 
 <p align="justify">
-I will not go into detail on how the reflectance function is translated into code, as the author of <a href="https://learnopengl.com/PBR/Lighting">the post</a> does a great job at explaining this. Once this functions are in the shader, computation for directional, point and spot lights is done in the shader, with the addition of the different light properties such as intensity/attenuation, ambient factor, color, cone angle in case of spot lights, and calculate the resulting light output keeping in mind the energy conservation rule.
+I will not go into detail on how the reflectance function is translated into code, as the author of <a href="https://learnopengl.com/PBR/Lighting" target="_blank">the post</a> does a great job at explaining this. Once this functions are in the shader, computation for directional, point and spot lights is done in the shader, with the addition of the different light properties such as intensity/attenuation, ambient factor, color, cone angle in case of spot lights, and calculate the resulting light output keeping in mind the energy conservation rule.
 </p>
 
 ```
@@ -200,7 +200,7 @@ Finally, the result of this functions is computed per pixel and drawn onto a cub
 
 ## References
 
-- https://learnopengl.com/PBR/Theory
-- https://www.marmoset.co/posts/basic-theory-of-physically-based-rendering/
-- https://www.alanzucconi.com/2017/10/10/atmospheric-scattering-1/
-- https://developer.nvidia.com/gpugems/GPUGems2/gpugems2_chapter16.html
+- <a href="https://learnopengl.com/PBR/Theory" target="_blank">LearnOpenGL PBR Theory</a>
+- <a href="https://www.marmoset.co/posts/basic-theory-of-physically-based-rendering/" target="_blank">Marmoset PBR Guide</a>
+- <a href="https://www.alanzucconi.com/2017/10/10/atmospheric-scattering-1/" target="_blank">Alan Zucconi Atmospheric Scattering</a>
+- <a href="https://developer.nvidia.com/gpugems/GPUGems2/gpugems2_chapter16.html" target="_blank">GPU Gems: Atmospheric Scattering</a>
