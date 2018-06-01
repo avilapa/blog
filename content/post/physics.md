@@ -1,5 +1,5 @@
 +++
-date = "2014-07-11T10:54:24+02:00"
+date = "2018-06-01"
 draft = true
 comments = false
 image = "/content/images/2018/may/xativa.png"
@@ -124,21 +124,76 @@ So you need to set the max substeps to the minimum framerate at which your game 
 
 #### Setting up substepping in code
 
-When it comes to C++, your physics calculations cannot be performed in the <i>Tick()</i> as you used to do.
+<p align="justify">
+Coding time it is! In your C++ classes, <b>physics calculations can no longer be performed in the <i>Tick()</i></b> as they used to do. 
+</p>
 
-You will need to define a <i>SubstepTick()</i>.... TO BE CONTINUED.
+<p align="justify">
+Lets see an easy example of the <i>template</i> we will need to implement on your <b><i>AActor</i></b> classes using physics. In the header we need to have the following lines of code. We will want to define a <i>PhysicsTick()</i> function as a <i>BlueprintNativeEvent</i>, so that it can be summoned from Blueprints if needed.
+</p>
+
+```
+ public:
+  // Event called every physics tick and sub-step.
+  UFUNCTION(BlueprintNativeEvent)
+  void PhysicsTick(float SubstepDeltaTime);
+  virtual void PhysicsTick_Implementation(float SubstepDeltaTime);
+
+  // Custom physics Delegate
+  FCalculateCustomPhysics OnCalculateCustomPhysics;
+  void CustomPhysics(float DeltaTime, FBodyInstance* BodyInstance);
+```
+
+<p align="justify">
+Also, we will need to subscribe to the FCalculateCustomPhysics Delegate. You can call it like this inside of the class constructor. Note that we will need to replace <i>AExampleActor</i> for the name of you <i>AActor</i> class!
+</p>
+
+```
+  OnCalculateCustomPhysics.BindUObject(this, &AExampleActor::CustomPhysics);
+```
+
+<p align="justify">
+In the actor's <i>Tick()</i> function, we need to actually add the custom physics each frame to the RootComponent body instance. In my case, <i>box_component_</i> is the RootComponent's Body Instance of the actor.
+</p>
+
+```
+  // Add custom physics on RootComponent's BodyInstance
+  if (box_component_->GetBodyInstance() != NULL) 
+  {
+    box_component_->GetBodyInstance()->AddCustomPhysics(OnCalculateCustomPhysics);
+  }
+```
+
+<p align="justify">
+Finally, we can declare our <i>PhysicsTick()</i> function (note that it is the <i>_Implementation</i> the one defined!) and call it from our <i>CustomPhysics()</i> function.
+</p>
+
+```
+  void AHoverVehicle::PhysicsTick_Implementation(float SubstepDeltaTime) 
+  {
+  	// Physics calculations go here...
+  }
+
+  void AHoverVehicle::CustomPhysics(float DeltaTime, FBodyInstance* BodyInstance) 
+  {
+    PhysicsTick(DeltaTime);
+  }
+```
 
 
 #### Handling substep physics
 
-a
+- bodyinstance
+- addforce bool
+- 
 
 ### Going further
 
+- spring arm
+
 ### Problems
 
-cpu overload, means physics overload (max substep!)
-
+ - cpu overload, means physics overload (max substep!)
 
 ### Why doesn't UE4 use a fixed timestep?
 
@@ -158,3 +213,5 @@ Getting the rest of the engine to use this new delta time would affect many syst
 \
 
 ##### References
+
+ - 0lento

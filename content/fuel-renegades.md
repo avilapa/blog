@@ -1,8 +1,7 @@
 +++
 
-date = "2006-08-30T03:45:00+02:00"
+date = "2018-06-01"
 draft = false
-
 image = "images/cover-fuel-renegades.png"
 layout = "cover"
 title = "Fuel Renegades"
@@ -21,7 +20,6 @@ type = "page"
 >How to achieve physics framerate independence in UE4 and how to correctly use substepping.
 >	<br><small><b>Víctor Ávila</b></small>
 
-[1]: /post/coming-soon/
-[//]: # ([1]: /post/framerate-independent-physics-in-ue4/)
+[1]: /post/framerate-independent-physics-in-ue4/
 \
 
