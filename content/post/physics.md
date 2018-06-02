@@ -1,6 +1,6 @@
 +++
 date = "2018-06-01"
-draft = true
+draft = false
 comments = false
 image = "/content/images/2018/may/xativa.png"
 slug = "framerate-independent-physics-in-ue4"
@@ -72,6 +72,15 @@ You can enable substepping by ticking <i>Project Settings > Physics > Framerate 
 This delta defines the step time above which the physics engine will need to perform substeps. It will perform as many substeps as needed to reach <i>1 / max-substep-delta-time</i> (1 / 0.008333 = 120fps in this case). The following tables show some practical examples for a better understanding (bear in mind, this is the most important setting when it comes to defining the update loop):
 </p>
 
+>>
+<b>FPS:</b> The frames per second at which the app is moving.
+>>
+<b>Substeps per <i>Tick()</i>:</b> The amount of substeps that were performed on a render frame.
+>>
+<b>Substep time:</b> The time in milliseconds that took the each substep.
+>>
+<b>Total:</b> The total time (Substeps per <i>Tick()</i> * Substep time).
+
 <b>Max Substep Delta = `1 / 120 (= 0.008333)`:</b>
 
 | FPS	| Substeps per _Tick()_ | Substep time  | Total |
@@ -103,7 +112,7 @@ This delta defines the step time above which the physics engine will need to per
 <small><i> Note: this numbers have been tested using command <b>~ t.MaxFPS</b>, so assume that instead of 120 fps, this results are for 119.99 fps, 59.99 fps instead of 60 fps, and so on.</i></small>
 
 <p align="justify">
-The results of the observation are rather obvious: <b>(1 / max-substep-delta-time) defines the max framerate at which our game should run.</b> Any lower framerates than the desired one will slow down the rendering, but not the physics, while higher framerates than the one defined by max substep delta time will result in an overall speed up to our game. 
+The results of the observation show how <b><i>(1 / max-substep-delta-time)</i> defines the max framerate at which our game should run.</b> Any lower framerates than the desired one will slow down the rendering, but not the physics, while higher framerates than the one defined by max substep delta time will result in an overall speed up to our game. 
 </p>
 
 <p align="justify">
@@ -165,7 +174,7 @@ In the actor's <i>Tick()</i> function, we need to actually add the custom physic
 ```
 
 <p align="justify">
-Finally, we can declare our <i>PhysicsTick()</i> function (note that it is the <i>_Implementation</i> the one defined!) and call it from our <i>CustomPhysics()</i> function.
+Finally, we can declare our <i>PhysicsTick()</i> function (note that it is the <i>_Implementation</i> the one defined!) and call it from our <i>CustomPhysics()</i> function This function will be executed once per substep.
 </p>
 
 ```
@@ -180,20 +189,53 @@ Finally, we can declare our <i>PhysicsTick()</i> function (note that it is the <
   }
 ```
 
+>>
+<b>Note:</b> There is a newer way to handle substepping in UE4 4.15, which i believe it works per scene, rather than for each actor, but I have not tried this yet.
 
 #### Handling substep physics
 
-- bodyinstance
-- addforce bool
-- 
+<p align="justify">
+With this setup, now we need to call all the physics related stuff inside of the <i>CustomPhysics()</i> function in order for them the be executed the proper amount of times. But in order to do this, we have to keep in mind some things:
+</p>
 
-### Going further
+###### We need to work with BodyInstance
 
-- spring arm
+<p align="justify">
+From now on, all writing and reading of data needs to be done to the BodyInstance of the object we're applying physics to. The reason for this, is that <b>BodyInstance's data stays always up-to-date on physics steps, while the actual component is only updated once per <i>Tick()</i></b>. Here are some examples of using body instance's data:
+</p>
 
-### Problems
+```
+// Getting the transformation matrix of the object
+FTransform WorldTransform = box_component_->GetBodyInstance()->GetUnrealWorldTransform_AssumesLocked();
 
- - cpu overload, means physics overload (max substep!)
+// World Location
+FVector Location = WorldTransform.GetLocation();
+
+// Getting the forward, right, and up vectors
+FVector Forward = WorldTransform.GetUnitAxis(EAxis::X);
+FVector Right   = WorldTransform.GetUnitAxis(EAxis::Z);
+FVector Up      = WorldTransform.GetUnitAxis(EAxis::Y);
+```
+
+###### Forces need to use substepping
+
+<p align="justify">
+Applying forces also needs to be done from the BodyInstance of the component in order for data to be saved.
+</p>
+
+```
+// Adding forces
+box_component_->GetBodyInstance()->AddForce(Forward, false);
+box_component_->GetBodyInstance()->AddTorque(Right, false, true);
+box_component_->GetBodyInstance()->AddForceAtPosition(-Forward, StartPoint, false);
+```
+
+<p align="justify">
+Note that there is an extra parameter in each of the functions called <b><i>bAllowSubstepping</i></b>. Contrary to what it suggests, you <b>must set it to <i>false</i> in order for physics to work correctly</b>.
+</p>
+
+>>
+<b>Note:</b> As you know, you don't need to multiply physics forces by the Delta Time, as UE4 does that for you.
 
 ### Why doesn't UE4 use a fixed timestep?
 
@@ -214,4 +256,12 @@ Getting the rest of the engine to use this new delta time would affect many syst
 
 ##### References
 
- - 0lento
+<p align="justify">
+So, you managed to achieve physics framerate independence! If you had any problem, do not hesitate to contact me, or try reaching out to the UE4 discord (Unreal Slackers), where <b>0lento</b> helped me find all this out!
+
+The troubles I had when searching information on this matter on the web and the official UE4 docs is what pushed me to do this small write-up about it. However, there are a couple links that helped me understand UE4 timestep and physics better:
+</p>
+
+- <a href="https://forums.unrealengine.com/community/community-content-tools-and-tutorials/71452-open-source-machinery-modelling-toolkit" target="_blank">MMT Plugin and its source</a>
+- <a href="http://www.aclockworkberry.com/unreal-engine-substepping/" target="_blank">A Clockwork Berry UE4 Substepping blog</a>
+- <a href="https://forums.unrealengine.com/community/community-content-tools-and-tutorials/60077-the-re-inventing-the-wheel-thread/page2?88495-The-Re-Inventing-the-Wheel-Thread=&viewfull=1" target="_blank">The Re-Inventing the Wheel post at unrealengine forums</a>
