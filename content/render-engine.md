@@ -14,7 +14,7 @@ type = "page"
 
 ### The Engine
 
-This is an __OpenGL__ and __C++__ rendering engine I made in my final HND year at [ESAT Valencia](https://www.esat.es/) for the graphics programming subject. Its main features are the following:
+This is an __OpenGL__ and __C++__ rendering engine I made in my final HND year at <a href="https://www.esat.es/" target="_blank">ESAT Valencia</a> for the graphics programming subject. Its main features are the following:
 
 - Multithreaded agnostical graphics API
 - Component oriented engine
@@ -36,9 +36,8 @@ This is an __OpenGL__ and __C++__ rendering engine I made in my final HND year a
 - Sound integration (OpenAL)
 - Physics integration (Bullet Physics)
 
-### Blog posts
 ---
-
+### Related blog posts
 
 >### [Custom Engine: Physically Based Rendering][1]
 >The physically based approach used for my custom rendering engine.
@@ -53,3 +52,12 @@ This is an __OpenGL__ and __C++__ rendering engine I made in my final HND year a
 
 [2]: /post/custom-engine-postprocessing/
 \
+
+---
+### Gallery
+
+<img src="/content/images/2018/aug/upydk/upydk_1.png", width="100%"/>
+<img src="/content/images/2018/aug/upydk/upydk_2.png", width="100%"/>
+<img src="/content/images/2018/aug/upydk/upydk_3.png", width="100%"/>
+<img src="/content/images/2018/aug/upydk/upydk_4.png", width="100%"/>
+<img src="/content/images/2018/aug/upydk/upydk_5.png", width="100%"/>
