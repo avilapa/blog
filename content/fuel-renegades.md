@@ -18,10 +18,13 @@ TL;DR: just go play it, its free! https://store.steampowered.com/app/878110/Fuel
 
 ### <a href="https://store.steampowered.com/app/878110/Fuel_Renegades/" target="_blank">Fuel Renegades</a>
 
-_Fuel Renegades is an epic arcade racing game REAL FREE (no DLC, no loot boxes, just fun), where your brain will produce tons of adrenaline because of the awesome race endings. Play up to four players in the same computer enjoying the polished mechanics that gives you a smooth game feel._
+<p align="justify">
+<i>Fuel Renegades is an epic arcade racing game REAL FREE (no DLC, no loot boxes, just fun), where your brain will produce tons of adrenaline because of the awesome race endings. Play up to four players in the same computer enjoying the polished mechanics that gives you a smooth game feel.</i>
+</p>
 
+<p align="justify">
 This game was developed during my final HND year by __<a href="https://twitter.com/ModularSouls/" target="_blank">Modular Souls</a>__, a small group of programming and art students from <a href="https://www.esat.es/" target="_blank">ESAT Valencia</a> and some composers from <a href="https://valencia.berklee.edu/" target="_blank">Berklee Valencia</a>. This project uses __Unreal Engine 4__ as its engine and was published in __<a href="https://store.steampowered.com/app/878110/Fuel_Renegades/" target="_blank">Steam</a>__ on July 31st 2018 after 9 months worth of development.
-
+</p>
 My main contributions to the project are the following:
 
  - __Player Vehicle design and implementation__: full implementation of vehicle movement mechanics with special emphasis on its feeling and speed.

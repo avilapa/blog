@@ -14,7 +14,9 @@ type = "page"
 
 ### The Engine
 
-This is an __OpenGL__ and __C++__ rendering engine I made in my final HND year at <a href="https://www.esat.es/" target="_blank">ESAT Valencia</a> for the graphics programming subject. Its main features are the following:
+<p align="justify">
+This is an <b>OpenGL</b> and <b>C++</b> rendering engine I made in my final HND year at <a href="https://www.esat.es/" target="_blank">ESAT Valencia</a> for the graphics programming subject. Its main features are the following:
+</p>
 
 - Multithreaded agnostical graphics API
 - Component oriented engine

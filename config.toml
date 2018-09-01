@@ -13,12 +13,19 @@ identifier = "blog"
 name = "Blog"
 pre = "<h3>avilapa</h3>"
 url = "/"
-weight = 230
+weight = 300
+
+
+[[menu.main]]
+pre = "<h3>Projects</h3>"
+identifier = "vxr-engine"
+name = "VXR Engine"
+url = "/vxr-engine"
+weight = 220
 
 [[menu.main]]
 identifier = "fuel-renegades"
 name = "Fuel Renegades"
-pre = "<h3>Projects</h3>"
 url = "/fuel-renegades"
 weight = 210
 
@@ -40,8 +47,8 @@ weight = 200
   googleAnalyticsUserID = "UA-118883750-1"
   # Optional RSS-Link, if not provided it defaults to the standard index.xml
   # RSSLink = ""
-  githubName = "avilapa"
-  twitterName = "ModularSouls"
+  githubName = ""
+  twitterName = "97torvic"
   # facebookName = ""
   # codepenName = ""
   linkedinName = "avilapa"
@@ -49,7 +56,7 @@ weight = 200
   # keybaseName = ""
   # flickrName = ""
   # instagramName = ""
-  # email = ""
+  email = "victorap97@gmail.com"
   # pinterestName = ""
   # googlePlusName = ""
 
