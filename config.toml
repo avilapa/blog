@@ -4,7 +4,7 @@ languageCode = "en-us"
 theme = "casper"
 
 paginate = 5
-DisqusShortname = "avilapa"
+DisqusShortname = "avilapa-github-io"
 Copyright = "All rights reserved - 2018"
 canonifyurls = true
 

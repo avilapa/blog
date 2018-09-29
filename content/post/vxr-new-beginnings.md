@@ -1,11 +1,13 @@
 +++
 date = "2018-09-01"
+comments = true
 draft = false
 image = "/content/images/2018/sep/vxr/new-beginnings.png"
 slug = "vxr-new-beginnings"
-tags = ["vxr"]
+tags = ["vxr", "engine"]
 title = "VXR: New beginnings"
 description = "First blog post of the development process of the VXR engine."
+share = true
 
 +++
 <br>

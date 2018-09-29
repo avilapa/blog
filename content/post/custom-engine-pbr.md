@@ -1,5 +1,6 @@
 +++
 date = "2018-05-27"
+comments = true
 draft = false
 image = "/content/images/2018/may/engine-pbr/pbr.png"
 slug = "custom-engine-pbr"

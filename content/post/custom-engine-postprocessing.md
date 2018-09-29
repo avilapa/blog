@@ -1,5 +1,5 @@
 +++
-comments = false
+comments = true
 date = "2018-05-27"
 draft = false
 image = "/content/images/2018/may/engine-postprocessing/pp.png"
