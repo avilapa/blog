@@ -10,7 +10,7 @@ type = "page"
 
 +++
 
-<img src="/content/images/2018/oct/vxr/logo_text.png/", width="100%"/>
+<img src="/content/images/2018/oct/vxr/engine_logo.png/", width="100%"/>
 
 ### The Engine
 

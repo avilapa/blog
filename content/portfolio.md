@@ -17,7 +17,7 @@ image = "/content/images/2018/aug/upydk/upydk_1.png"
 <p align="justify" style="line-height:1.4">
 <b>Link:</b> https://store.steampowered.com/app/878110/Fuel_Renegades/
 
-<b>Arcade racing multiplayer</b> (4 players split-screen, up to 8 players online) game with <b>polished mechanics and smooth game feel</b>, built in <b>Unreal Engine 4</b> and published on Steam. 
+<b>Arcade racing multiplayer</b> (4 players split-screen, up to 8 players online) game with <b>polished mechanics and smooth game feel</b>, built in <b>Unreal Engine 4</b> and published on Steam. My main contributions to the project are:
 
  - __Player Vehicle design and implementation__: full implementation of vehicle movement mechanics with special emphasis on its feeling and speed.
  - Proper use of UE4 substepping system to achieve solid gameplay performance and __<a href="/post/framerate-independent-physics-in-ue4/" target="_blank">framerate independent physics</a>__ across computers with a wide range of specs.
@@ -35,7 +35,7 @@ image = "/content/images/2018/aug/upydk/upydk_1.png"
 
 <font size="2">
 <p align="justify" style="line-height:1.4">
-<b>OpenGL and C++ rendering engine</b> I made in my final HND year at ESAT Valencia for the graphics programming subject. This project was also my <b>first attempt at making a 3D Engine</b>.
+<b>OpenGL and C++ rendering engine</b> I made in my final HND year at ESAT Valencia for the graphics programming subject. This project was also my <b>first attempt at making a 3D Engine</b>. Its features are the following:
 
 - Multithreaded agnostical graphics API.
 - Component oriented engine.
@@ -62,7 +62,7 @@ image = "/content/images/2018/aug/upydk/upydk_1.png"
 <b>Link:</b> https://github.com/avilapa/vxr
 
 Project that emerged from the desire to build a <b>general purpose rendering tool</b> that I could use to implement anything I was curious about or wanted to learn about.
-As it stands now, it is a <b>multithreaded 3D engine written in C++</b> and oriented to support different rendering backends. 
+As it stands now, it is a <b>multithreaded 3D engine written in C++</b> and oriented to support different rendering backends. It is currently being worked on.
 
 - Multithreaded agnostical graphics API.
 - Command Based Rendering, allowing to build the render commands in advance to be run in a separate thread.
