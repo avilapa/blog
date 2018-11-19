@@ -1,7 +1,7 @@
 +++
 date = "2018-09-01"
 comments = true
-draft = false
+draft = true
 image = "/content/images/2018/sep/vxr/new-beginnings.png"
 slug = "vxr-new-beginnings"
 tags = ["vxr", "engine"]

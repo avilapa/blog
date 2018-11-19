@@ -1,7 +1,7 @@
 +++
 comments = true
 date = "2018-05-27"
-draft = false
+draft = true
 image = "/content/images/2018/may/engine-postprocessing/pp.png"
 slug = "custom-engine-postprocessing"
 tags = ["custom-engine", "postprocessing", "opengl", "c++", "ssao", "bloom", "fxaa", "lens-distortion"]

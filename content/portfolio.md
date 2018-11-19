@@ -55,7 +55,30 @@ image = "/content/images/2018/aug/upydk/upydk_1.png"
 </font>
 <hr>
 
-#### <a href="/vxr-engine/" target="_blank">VXR (Open Source Engine)</a>
+
+#### <a href="/vxt-raytracer/" target="_blank">vxt Raytracer (Open Source)</a>
+
+<font size="2">
+<p align="justify" style="line-height:1.4">
+<b>Link:</b> https://github.com/avilapa/vxt
+
+First contact with ray tracing and offline rendering techniques in C++. Multithreaded CPU
+based path tracer built from scratch.
+
+- Multithreaded Tiled Rendering in CPU.
+- Creation of Image Previews in the process.
+- Objects: Sphere, Box, Axis Aligned Plane, Volume, AABB (all capable of being Translated and Rotated).
+- Bounding Volume Hierarchy Acceleration Structure.
+- Materials: Lambertian, Metal, Glass, Isotropic (Fog/Smoke), Diffuse Light.
+- Textures (used in all materials): Image Based, Noise, Custom.
+- Realistic Camera: Depth of Field, Motion Blur.
+
+<img src="/content/images/2018/nov/vxt/raytracing_collage.jpg", width="100%"/>
+</p>
+</font>
+<hr>
+
+#### <a href="/vxr-engine/" target="_blank">vxr Engine (Open Source)</a>
 
 <font size="2">
 <p align="justify" style="line-height:1.4">
@@ -87,6 +110,7 @@ Project for the <b>low level and optimization</b> subject in my final HND year. 
 </font>
 <hr>
 
+<!--
 #### Multi-Agent System and A* Pathfinding
 
 <font size="2">
@@ -150,4 +174,4 @@ I have participated in several Game Jams in Ludum Dare, and privately organized 
 </p>
 </font>
 <hr>
-
+-->

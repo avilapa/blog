@@ -4,7 +4,7 @@ date = "2006-08-30T03:45:00+02:00"
 draft = false
 image = "/content/images/2018/oct/vxr/planets.png"
 layout = "cover"
-title = "vxr (Open Source Engine)"
+title = "vxr Engine (Open Source)"
 description = "General purpose engine written in C++ with emphasis on rendering."
 type = "page"
 
@@ -26,7 +26,7 @@ As it stands now, it is a <b>multithreaded 3D game development engine written in
   - A <b>lower level API</b> based on render display list commands that can be used to build <b>small but efficient</b> applications.
   - A <b>higher level API</b> built on top of the lower level one, which abstracts it to provide a <b>rendering agnostic and component oriented</b> API.
   
-<b>Github page: https://avilapa.github.io/vxr-engine/</b>
+<b>Github page: https://github.com/avilapa/vxr</b>
 
 ### Development blog posts
 

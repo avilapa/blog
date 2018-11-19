@@ -22,6 +22,12 @@ url = "/portfolio"
 weight = 310
 
 [[menu.main]]
+identifier = "resume"
+name = "Resume"
+url = "/resume/resume.pdf"
+weight = 305
+
+[[menu.main]]
 identifier = "blog"
 name = "Blog"
 url = "/"
@@ -29,22 +35,28 @@ weight = 300
 
 [[menu.main]]
 pre = "<h3>Projects</h3>"
-identifier = "vxr-engine"
-name = "vxr Engine"
-url = "/vxr-engine"
-weight = 220
-
-[[menu.main]]
 identifier = "fuel-renegades"
 name = "Fuel Renegades"
 url = "/fuel-renegades"
-weight = 210
+weight = 290
 
 [[menu.main]]
 identifier = "render-engine"
 name = "Custom Engine"
 url = "/render-engine"
-weight = 200
+weight = 280
+
+[[menu.main]]
+identifier = "vxt-raytracer"
+name = "vxt Raytracer"
+url = "/vxt-raytracer"
+weight = 270
+
+[[menu.main]]
+identifier = "vxr-engine"
+name = "vxr Engine"
+url = "/vxr-engine"
+weight = 260
 
 [params]
   description = "Videogames programming student and computer graphics enthusiast"
