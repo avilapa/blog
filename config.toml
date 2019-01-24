@@ -24,7 +24,7 @@ weight = 310
 [[menu.main]]
 identifier = "resume"
 name = "Resume"
-url = "/resume/resume.pdf"
+url = "/resume/resume_cv.pdf"
 weight = 305
 
 [[menu.main]]

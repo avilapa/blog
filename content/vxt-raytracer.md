@@ -10,7 +10,7 @@ type = "page"
 
 +++
 
-<img src="/content/images/2018/nov/vxt/raytracing_collage.jpg/", width="100%"/>
+<img src="/content/images/2018/nov/vxt/raytracing_collage.jpg", width="100%"/>
 
 ### The Raytracer
 
