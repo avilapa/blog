@@ -59,13 +59,13 @@ url = "/vxr-engine"
 weight = 260
 
 [params]
-  description = "Videogames programming student and computer graphics enthusiast"
+  description = "Games programmer and computer graphics enthusiast"
   metadescription = ""
   cover = "images/cover-engine-dark.png"
   author = "Víctor Ávila Parcet"
   authorlocation = "Valencia, Spain"
   authorwebsite = "http://avilapa.github.io"
-  authorbio= "Videogames programming student and computer graphics enthusiast"
+  authorbio= "Games programmer and computer graphics enthusiast"
   logo = "images/logo-large.png"
   googleAnalyticsUserID = "UA-118883750-1"
   # Optional RSS-Link, if not provided it defaults to the standard index.xml
